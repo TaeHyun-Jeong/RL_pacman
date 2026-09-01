@@ -2,7 +2,7 @@
 
 **직접 설계한 강화학습 환경**에서 Pacman이 Ghost를 피하면서 모든 Food를 수집하도록 학습하는 Dueling Double DQN 기반 RL 프로젝트입니다.
 
-![Pacman RL Demo](assets/pacman_deploy.gif)
+![Pacman RL Demo](pacman_deploy.gif)
 
 > **핵심 요약**
 >
@@ -205,7 +205,7 @@ Food를 먹은 후 다음 Food를 향해 이동하기보다 불필요한 방향 
 
 ### Training Reward
 
-![Pacman RL Demo](assets/pacman_reward_average.png)
+![Training Reward](pacman_reward_average.png)
 
 
 학습이 완료된 모델을 저장하고, 별도의 실행 코드에서 불러와 실제 Pacman 게임을 플레이하도록 구현했습니다. 최종 플레이 결과는 본문 상단 GIF에서 확인할 수 있습니다.
