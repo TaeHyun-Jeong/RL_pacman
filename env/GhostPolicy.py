@@ -1,5 +1,5 @@
 class Ghost:  #7step Chase, 3step Scatter
-    def __init__(self, scatter_corner=None, cycle_len=10, chase_steps=7):
+    def __init__(self, scatter_corner=None, cycle_len=10, chase_steps=8):
         self.SCATTER = 0
         self.CHASE = 1
 
