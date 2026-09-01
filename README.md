@@ -2,13 +2,7 @@
 
 **직접 설계한 강화학습 환경**에서 Pacman이 Ghost를 피하면서 모든 Food를 수집하도록 학습하는 Dueling Double DQN 기반 RL 프로젝트입니다.
 
-<!-- 추후 GIF 추가 -->
-
-<!-- ![Pacman RL Demo](assets/pacman_demo.gif) -->
-
-<!-- 추후 학습 그래프 추가 -->
-
-<!-- ![Training Reward](assets/training_reward.png) -->
+![Pacman RL Demo](assets/pacman_deploy.gif)
 
 > **핵심 요약**
 >
@@ -86,11 +80,11 @@ Gymnasium의 Custom Environment 구조를 참고하여 `reset()`, `step()`, `_ge
 Ghost는 강화학습 Agent가 아닌 **규칙 기반 Policy**로 구현했습니다.
 
 ```text
-7 Step CHASE
+8 Step CHASE
       ↓
-3 Step SCATTER
+2 Step SCATTER
       ↓
-7 Step CHASE
+8 Step CHASE
       ↓
       ...
 ```
@@ -211,21 +205,10 @@ Food를 먹은 후 다음 Food를 향해 이동하기보다 불필요한 방향 
 
 ### Training Reward
 
-<!-- 추후 학습 그래프 추가 -->
+![Pacman RL Demo](assets/pacman_reward_average.png)
 
-```text
-[ Training Reward Graph ]
-```
 
-### Final Agent
-
-<!-- 추후 최종 플레이 GIF 추가 -->
-
-```text
-[ Pacman Gameplay GIF ]
-```
-
-학습이 완료된 모델을 저장하고, 별도의 실행 코드에서 불러와 실제 Pacman 게임을 플레이하도록 구현했습니다.
+학습이 완료된 모델을 저장하고, 별도의 실행 코드에서 불러와 실제 Pacman 게임을 플레이하도록 구현했습니다. 최종 플레이 결과는 본문 상단 GIF에서 확인할 수 있습니다.
 
 ---
 
